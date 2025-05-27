@@ -1,0 +1,118 @@
+2025-05-26 13:17:39 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:17:44 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:17:49 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:18:15 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:18:20 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:18:25 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:18:25 | ERROR    | app.database.rds:test_db_connection:48 - Failed to connect to the database after 3 attempts.
+2025-05-26 13:19:56 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: type object 'LoggerConstants' has no attribute 'DB_CONNECT_SUCCESS'
+2025-05-26 13:20:01 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: type object 'LoggerConstants' has no attribute 'DB_CONNECT_SUCCESS'
+2025-05-26 13:20:06 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: type object 'LoggerConstants' has no attribute 'DB_CONNECT_SUCCESS'
+2025-05-26 13:20:06 | ERROR    | app.database.rds:test_db_connection:48 - Failed to connect to the database after 3 attempts.
+2025-05-26 13:20:50 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:23:37 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:23:39 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:24:42 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:24:42 | ERROR    | app.main:lifespan:26 - Database connection error: type object 'LoggerConstants' has no attribute 'APP_STARTUP'
+2025-05-26 13:25:50 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:25:50 | INFO     | app.main:lifespan:21 - Application startup initiated.
+2025-05-26 13:25:50 | INFO     | app.main:lifespan:24 - Successfully connected to the database
+2025-05-26 13:25:51 | INFO     | app.main:lifespan:32 - Application shutdown completed.
+2025-05-26 13:25:53 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:25:53 | INFO     | app.main:lifespan:21 - Application startup initiated.
+2025-05-26 13:25:53 | INFO     | app.main:lifespan:24 - Successfully connected to the database
+2025-05-26 13:26:05 | INFO     | app.main:lifespan:32 - Application shutdown completed.
+2025-05-26 13:26:08 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:26:09 | INFO     | app.main:lifespan:21 - Application startup initiated.
+2025-05-26 13:26:09 | INFO     | app.main:lifespan:24 - Successfully connected to the database
+2025-05-26 13:28:09 | INFO     | app.main:lifespan:32 - Application shutdown completed.
+2025-05-26 13:28:11 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:28:12 | INFO     | app.main:lifespan:21 - Application startup initiated.
+2025-05-26 13:28:12 | INFO     | app.main:lifespan:24 - Successfully connected to the database
+2025-05-26 13:28:18 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/docs
+2025-05-26 13:28:18 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-26 13:29:18 | INFO     | app.main:lifespan:32 - Application shutdown completed.
+2025-05-26 13:29:19 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:29:19 | INFO     | app.main:lifespan:21 - Application startup initiated.
+2025-05-26 13:29:19 | INFO     | app.main:lifespan:24 - Successfully connected to the database
+2025-05-26 13:29:21 | INFO     | app.main:lifespan:32 - Application shutdown completed.
+2025-05-26 13:29:22 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:29:22 | INFO     | app.main:lifespan:21 - Application startup initiated.
+2025-05-26 13:29:22 | INFO     | app.main:lifespan:24 - Successfully connected to the database
+2025-05-26 13:29:30 | INFO     | app.main:lifespan:32 - Application shutdown completed.
+2025-05-26 13:29:31 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:29:32 | INFO     | app.main:lifespan:21 - Application startup initiated.
+2025-05-26 13:29:32 | INFO     | app.main:lifespan:24 - Successfully connected to the database
+2025-05-26 13:29:41 | INFO     | app.main:lifespan:32 - Application shutdown completed.
+2025-05-26 13:29:43 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:29:43 | INFO     | app.main:lifespan:21 - Application startup initiated.
+2025-05-26 13:29:43 | INFO     | app.main:lifespan:24 - Successfully connected to the database
+2025-05-26 13:29:45 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/docs
+2025-05-26 13:29:45 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 404
+2025-05-26 13:29:45 | INFO     | app.core.logger.logging:log_request:59 - Process time: 1.0ms
+2025-05-26 13:29:45 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/favicon.ico
+2025-05-26 13:29:45 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 404
+2025-05-26 13:29:45 | INFO     | app.core.logger.logging:log_request:59 - Process time: 0.0ms
+2025-05-26 13:30:10 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/docs
+2025-05-26 13:30:10 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:30:10 | INFO     | app.core.logger.logging:log_request:59 - Process time: 1.0ms
+2025-05-26 13:30:11 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/openapi.json
+2025-05-26 13:30:11 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:30:11 | INFO     | app.core.logger.logging:log_request:59 - Process time: 9.27ms
+2025-05-26 13:30:25 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/search?query=bangalore
+2025-05-26 13:30:25 | DEBUG    | app.dao.geo_feature_dao:search_by_text:35 - Full-text search found 7 results
+2025-05-26 13:30:26 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:30:26 | INFO     | app.core.logger.logging:log_request:59 - Process time: 178.63ms
+2025-05-26 13:35:28 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/docs
+2025-05-26 13:35:28 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:35:28 | INFO     | app.core.logger.logging:log_request:59 - Process time: 1.0ms
+2025-05-26 13:35:36 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/docs
+2025-05-26 13:35:36 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:35:36 | INFO     | app.core.logger.logging:log_request:59 - Process time: 1.01ms
+2025-05-26 13:35:36 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/openapi.json
+2025-05-26 13:35:36 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:35:36 | INFO     | app.core.logger.logging:log_request:59 - Process time: 1.0ms
+2025-05-26 13:35:49 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/openapi.json
+2025-05-26 13:35:49 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:35:49 | INFO     | app.core.logger.logging:log_request:59 - Process time: 2.0ms
+2025-05-26 13:36:48 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/search?query=bangalore
+2025-05-26 13:36:48 | DEBUG    | app.dao.geo_feature_dao:search_by_text:35 - Full-text search found 7 results
+2025-05-26 13:36:49 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:36:49 | INFO     | app.core.logger.logging:log_request:59 - Process time: 218.98ms
+2025-05-26 13:37:29 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/search?query=Bangalore
+2025-05-26 13:37:29 | DEBUG    | app.dao.geo_feature_dao:search_by_text:35 - Full-text search found 7 results
+2025-05-26 13:37:29 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:37:29 | INFO     | app.core.logger.logging:log_request:59 - Process time: 257.11ms
+2025-05-26 13:37:37 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/search?query=Bangalore%20mumbai
+2025-05-26 13:37:37 | DEBUG    | app.dao.geo_feature_dao:search_by_text:35 - Full-text search found 1 results
+2025-05-26 13:37:37 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:37:37 | INFO     | app.core.logger.logging:log_request:59 - Process time: 33.0ms
+2025-05-26 13:38:44 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/search/railways?lat=15.363728263380317&lon=75.15602926482048&radius_km=20
+2025-05-26 13:38:44 | DEBUG    | app.dao.geo_feature_dao:search_railways_by_location:107 - Railway search found 0 results
+2025-05-26 13:38:44 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 404
+2025-05-26 13:38:44 | INFO     | app.core.logger.logging:log_request:59 - Process time: 40.39ms
+2025-05-26 13:39:16 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/search/railways?lat=12.95179906941236&lon=77.57383133842275&radius_km=20
+2025-05-26 13:39:16 | DEBUG    | app.dao.geo_feature_dao:search_railways_by_location:107 - Railway search found 21 results
+2025-05-26 13:39:16 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:39:16 | INFO     | app.core.logger.logging:log_request:59 - Process time: 11.45ms
+2025-05-26 13:40:37 | INFO     | app.core.logger.logging:log_request:53 - Request: GET http://127.0.0.1:8000/api/v1/autocomplete?query=banga
+2025-05-26 13:40:37 | DEBUG    | app.dao.geo_feature_dao:get_autocomplete_suggestions:202 - Autocomplete found 7 suggestions
+2025-05-26 13:40:37 | INFO     | app.core.logger.logging:log_request:58 - Response: Status: 200
+2025-05-26 13:40:37 | INFO     | app.core.logger.logging:log_request:59 - Process time: 15.37ms
+2025-05-26 13:41:11 | INFO     | app.main:lifespan:32 - Application shutdown completed.
+2025-05-26 13:41:12 | INFO     | app.database.rds:test_db_connection:42 - Successfully connected to the database
+2025-05-26 13:41:12 | INFO     | app.main:lifespan:21 - Application startup initiated.
+2025-05-26 13:41:12 | INFO     | app.main:lifespan:24 - Successfully connected to the database
+2025-05-26 13:41:29 | INFO     | app.main:lifespan:32 - Application shutdown completed.

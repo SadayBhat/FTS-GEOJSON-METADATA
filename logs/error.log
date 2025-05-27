@@ -1,0 +1,24 @@
+2025-05-26 13:17:39 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:17:44 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:17:49 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:18:15 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:18:20 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:18:25 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "discover" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-26 13:18:25 | ERROR    | app.database.rds:test_db_connection:48 - Failed to connect to the database after 3 attempts.
+2025-05-26 13:19:56 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: type object 'LoggerConstants' has no attribute 'DB_CONNECT_SUCCESS'
+2025-05-26 13:20:01 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: type object 'LoggerConstants' has no attribute 'DB_CONNECT_SUCCESS'
+2025-05-26 13:20:06 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: type object 'LoggerConstants' has no attribute 'DB_CONNECT_SUCCESS'
+2025-05-26 13:20:06 | ERROR    | app.database.rds:test_db_connection:48 - Failed to connect to the database after 3 attempts.
+2025-05-26 13:24:42 | ERROR    | app.main:lifespan:26 - Database connection error: type object 'LoggerConstants' has no attribute 'APP_STARTUP'
