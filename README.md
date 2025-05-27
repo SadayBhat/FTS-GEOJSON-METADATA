@@ -6,7 +6,7 @@
 This project enables users to search for geospatial features—like roads or railway stations—based or geographic coordinates. It returns relevant spatial data with metadata such as category, type, and proximity.
 
 Examples:
-- “Show me all proposed roads near Devanahalli”
+- “proposed roads near Devanahalli”
 
 ---
 
