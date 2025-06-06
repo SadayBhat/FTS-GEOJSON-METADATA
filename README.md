@@ -3,10 +3,7 @@
 
 ## What it Does
 
-This project enables users to search for geospatial features—like roads or railway stations—based or geographic coordinates. It returns relevant spatial data with metadata such as category, type, and proximity.
-
-Examples:
-- “proposed roads near Devanahalli”
+This project enables users to search for geospatial features—like roads or railway stations—based or industries. It returns relevant spatial data with metadata such as category, type, and proximity.
 
 ---
 
