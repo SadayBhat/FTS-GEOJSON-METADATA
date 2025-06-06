@@ -6,7 +6,9 @@ from app.database.rds import Base, engine
 from app.api.v1.endpoints.routes import router as api_router
 from app.core.logger.logging import log_request, get_logger
 from app.core.config import settings
+from app.database.rds import test_db_connection
 from app.core.constants.logger_constants import LoggerConstants
+from mangum import Mangum
 
 # Get logger
 logger = get_logger()
@@ -20,6 +22,7 @@ async def lifespan(app: FastAPI):
     try:
         logger.info(LoggerConstants.APP_STARTUP)
         Base.metadata.create_all(bind=engine)
+        test_db_connection()
         with engine.connect() as conn:
             logger.info(LoggerConstants.DB_CONNECT_SUCCESS)
     except Exception as e:
@@ -58,3 +61,5 @@ async def logging_middleware(request: Request, call_next):
 
 # Include API router
 app.include_router(api_router, prefix=settings.API_V1_PREFIX, tags=["FTS-Document-Search"])
+
+handler = Mangum(app)

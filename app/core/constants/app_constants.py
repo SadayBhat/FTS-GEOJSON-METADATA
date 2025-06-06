@@ -1,31 +1,24 @@
 class AppConstants:
-    """Application-wide constants"""
     
-    # Feature Types
-    FEATURE_TYPE_POI = "POI"
-    FEATURE_TYPE_GEOMETRY = "Feature"
-    
-    # Categories
     CATEGORY_POI = "POI"
     SUB_CATEGORY_RAILWAY = "Railway Stations"
     
-    # Coordinate System
-    SRID_WGS84 = 4326
+    SRID = 4326
+    GEOMETRY_TYPE = "GEOMETRY"
     
-    # Units
     METERS_PER_KM = 1000
     
-    # Search
-    MIN_QUERY_LENGTH = 1
-    MAX_SEARCH_RESULTS = 100
-    
-    # Geometry Types
-    GEOM_TYPE_POINT = "Point"
-    GEOM_TYPE_LINESTRING = "LineString"
-    GEOM_TYPE_POLYGON = "Polygon"
-    GEOM_TYPE_MULTIPOINT = "MultiPoint"
-    GEOM_TYPE_MULTILINESTRING = "MultiLineString"
-    GEOM_TYPE_MULTIPOLYGON = "MultiPolygon"
+    RETRY_ATTEMPTS = 3
+    DELAY_TIME = 5
 
-    RETRY_ATTEMPTS=3
-    DELAY_TIME=5
+    TABLE_NAME = "geo_features1"
+
+    GEOMETRY_INDEX_GIN = "idx_geo_geom"
+    SEARCH_VECTOR_INDEX_GIN = "idx_geo_features_search_vector"
+    TRIGRAM_INDEX_NAME_GIN = "idx_name_trgm"
+    NAME_INDEX_GIN = "idx_name_fts"
+    PROJECT_INDEX_GIN = "idx_geo_features_project_fts"
+    PROJECT_TRIGRAM_INDEX_GIN = "idx_project_trgm"
+    STD_CODE_INDEX_GIN = "idx_std_code"
+
+    VECTOR_LANGUAGE="english"

@@ -6,7 +6,6 @@ from loguru import logger
 from app.core.constants.logger_constants import LoggerConstants
 from app.core.config import settings
 
-# Ensure logs directory exists
 os.makedirs(LoggerConstants.LOG_DIR, exist_ok=True)
 
 # Remove default handler
@@ -48,7 +47,6 @@ logger.add(
 )
 
 async def log_request(request: Request, call_next):
-    """Middleware to log HTTP requests and responses"""
     start_time = time.time()
     logger.info(LoggerConstants.REQUEST_LOG.format(request=f"{request.method} {request.url}"))
 
@@ -61,5 +59,4 @@ async def log_request(request: Request, call_next):
     return response
 
 def get_logger():
-    """Return the configured logger instance"""
     return logger

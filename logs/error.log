@@ -22,3 +22,280 @@
 2025-05-26 13:20:06 | ERROR    | app.database.rds:test_db_connection:46 - Database connection error: type object 'LoggerConstants' has no attribute 'DB_CONNECT_SUCCESS'
 2025-05-26 13:20:06 | ERROR    | app.database.rds:test_db_connection:48 - Failed to connect to the database after 3 attempts.
 2025-05-26 13:24:42 | ERROR    | app.main:lifespan:26 - Database connection error: type object 'LoggerConstants' has no attribute 'APP_STARTUP'
+2025-05-29 13:02:24 | ERROR    | app.dao.geo_feature_dao:get_autocomplete_suggestions:201 - Error in autocomplete: unsupported operand type(s) for |: 'NoneType' and 'str'
+2025-05-29 13:02:24 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: unsupported operand type(s) for |: 'NoneType' and 'str'
+2025-05-29 13:02:24 | ERROR    | app.api.v1.endpoints.routes:autocomplete:83 - Error during autocomplete: unsupported operand type(s) for |: 'NoneType' and 'str'
+2025-05-29 13:02:31 | ERROR    | app.dao.geo_feature_dao:get_autocomplete_suggestions:201 - Error in autocomplete: unsupported operand type(s) for |: 'NoneType' and 'str'
+2025-05-29 13:02:31 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: unsupported operand type(s) for |: 'NoneType' and 'str'
+2025-05-29 13:02:31 | ERROR    | app.api.v1.endpoints.routes:autocomplete:83 - Error during autocomplete: unsupported operand type(s) for |: 'NoneType' and 'str'
+2025-05-29 13:03:51 | ERROR    | app.dao.geo_feature_dao:get_autocomplete_suggestions:201 - Error in autocomplete: unsupported operand type(s) for |: 'NoneType' and 'str'
+2025-05-29 13:03:51 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: unsupported operand type(s) for |: 'NoneType' and 'str'
+2025-05-29 13:03:51 | ERROR    | app.api.v1.endpoints.routes:autocomplete:83 - Error during autocomplete: unsupported operand type(s) for |: 'NoneType' and 'str'
+2025-05-29 15:18:48 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 15:18:48 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - Error in autocomplete: {error}: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 15:48:07 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 15:48:07 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - Error in autocomplete: {error}: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 15:48:12 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 15:48:12 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - AUTO COMPLETE ERROR'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 15:48:51 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 15:48:51 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - AUTO COMPLETE ERROR'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 15:48:56 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 15:48:56 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - AUTO COMPLETE ERROR'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 17:11:40 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - AUTO COMPLETE ERROR'AutocompleteService' object has no attribute 'logger'
+2025-05-29 17:11:42 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - Error in autocomplete: {error}: 'AutocompleteService' object has no attribute 'logger'
+2025-05-29 17:13:25 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - Error in autocomplete: {error}: 'AutocompleteService' object has no attribute 'logger'
+2025-05-29 17:13:27 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 17:13:27 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - Error in autocomplete: {error}: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 17:13:29 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 17:13:29 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - Error in autocomplete: {error}: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 17:14:53 | ERROR    | app.services.autocomplete_service:get_suggestions:16 - Autocomplete error: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 17:14:53 | ERROR    | app.api.v1.endpoints.routes:autocomplete:84 - Error in autocomplete: {error}: 'GeoFeatureDAO' object has no attribute 'logger'
+2025-05-29 17:29:13 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bangelo', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:29:13 | ERROR    | app.services.feature_search_service:search_by_query:24 - Search error: 500: Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bangelo', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:29:13 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 500: 500: Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bangelo', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:29:20 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'benga', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:29:20 | ERROR    | app.services.feature_search_service:search_by_query:24 - Search error: 500: Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'benga', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:29:20 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 500: 500: Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'benga', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:29:22 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'benga', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:29:22 | ERROR    | app.services.feature_search_service:search_by_query:24 - Search error: 500: Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'benga', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:29:22 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 500: 500: Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'benga', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:30:27 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bangalore', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:30:27 | ERROR    | app.services.feature_search_service:search_by_query:24 - Search error: 500: Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bangalore', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:30:27 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 500: 500: Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bangalore', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:32:32 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bangalore', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:32:32 | ERROR    | app.services.feature_search_service:search_by_query:24 - Search error: 500: Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bangalore', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:32:32 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 500: 500: Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bangalore', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:32:34 | ERROR    | app.services.feature_search_service:search_by_query:26 - Search error: 'FeatureSearchService' object has no attribute 'search_by_text'
+2025-05-29 17:32:34 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 500: 'FeatureSearchService' object has no attribute 'search_by_text'
+2025-05-29 17:32:36 | ERROR    | app.services.feature_search_service:search_by_query:26 - Search error: 'FeatureSearchService' object has no attribute 'search_by_text'
+2025-05-29 17:32:36 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 500: 'FeatureSearchService' object has no attribute 'search_by_text'
+2025-05-29 17:33:11 | ERROR    | app.services.feature_search_service:search_by_query:26 - Search error: 'FeatureSearchService' object has no attribute 'search_by_text'
+2025-05-29 17:33:11 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 500: 'FeatureSearchService' object has no attribute 'search_by_text'
+2025-05-29 17:38:43 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 'FeatureSearchService' object has no attribute 'search_by_query'
+2025-05-29 17:38:45 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bharatmala', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:38:45 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: "'plainto_tsquery_1'"
+2025-05-29 17:38:46 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bharatmala', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:38:46 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: "'plainto_tsquery_1'"
+2025-05-29 17:38:55 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.feature_type does not exist
+LINE 1: SELECT geo_features.id AS geo_features_id, geo_features.feat...
+                                                   ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.feature_type AS geo_features_feature_type, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bharatmala', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:38:55 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: "'plainto_tsquery_1'"
+2025-05-29 17:41:13 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.geometry does not exist
+LINE 1: ....properties AS geo_features_properties, ST_AsEWKB(geo_featur...
+                                                             ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bharatmala', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:41:13 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: "'plainto_tsquery_1'"
+2025-05-29 17:41:43 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.geometry does not exist
+LINE 1: ....properties AS geo_features_properties, ST_AsEWKB(geo_featur...
+                                                             ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bharatmala', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:41:43 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: "'plainto_tsquery_1'"
+2025-05-29 17:42:51 | ERROR    | app.dao.geo_feature_dao:search_by_text:37 - Error in full-text search: (psycopg2.errors.UndefinedColumn) column geo_features.geometry does not exist
+LINE 1: ....properties AS geo_features_properties, ST_AsEWKB(geo_featur...
+                                                             ^
+
+[SQL: SELECT geo_features.id AS geo_features_id, geo_features.properties AS geo_features_properties, ST_AsEWKB(geo_features.geometry) AS geo_features_geometry, geo_features.geom_type AS geo_features_geom_type, geo_features.coordinates AS geo_features_coordinates, geo_features.search_vector AS geo_features_search_vector 
+FROM geo_features 
+WHERE geo_features.search_vector @@ plainto_tsquery(%(plainto_tsquery_1)s, %(plainto_tsquery_2)s) 
+ LIMIT %(param_1)s]
+[parameters: {'plainto_tsquery_1': 'english', 'plainto_tsquery_2': 'bharatmala', 'param_1': 20}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-29 17:42:51 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: "'plainto_tsquery_1'"
+2025-05-29 17:46:03 | ERROR    | app.services.feature_conversion_service:convert:28 - [FeatureConversion] Error: 'GeoFeature' object has no attribute 'geometry'
+2025-05-29 17:46:03 | ERROR    | app.services.feature_search_service:search_by_query:29 - Search error: 'GeoFeature' object has no attribute 'geometry'
+2025-05-29 17:46:03 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 500: 'GeoFeature' object has no attribute 'geometry'
+2025-05-29 17:47:18 | ERROR    | app.services.feature_conversion_service:convert:28 - [FeatureConversion] Error: 'GeoFeature' object has no attribute 'geometry'
+2025-05-29 17:47:18 | ERROR    | app.services.feature_search_service:search_by_query:29 - Search error: 'GeoFeature' object has no attribute 'geometry'
+2025-05-29 17:47:18 | ERROR    | app.api.v1.endpoints.routes:search_features:26 - Error during search operation: 500: 'GeoFeature' object has no attribute 'geometry'
+2025-05-29 18:08:20 | ERROR    | app.services.feature_search_service:search_by_query:30 - Search error: 1 validation error for FeatureOut
+type
+  Field required [type=missing, input_value=<app.database.models.GeoF...t at 0x000001FC3724B8E0>, input_type=GeoFeature]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-05-29 18:08:20 | ERROR    | app.api.v1.endpoints.routes:search_features:25 - Error during search operation: 500: 1 validation error for FeatureOut
+type
+  Field required [type=missing, input_value=<app.database.models.GeoF...t at 0x000001FC3724B8E0>, input_type=GeoFeature]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-05-29 18:08:22 | ERROR    | app.services.feature_search_service:search_by_query:30 - Search error: 1 validation error for FeatureOut
+type
+  Field required [type=missing, input_value=<app.database.models.GeoF...t at 0x000001FC372A0A00>, input_type=GeoFeature]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-05-29 18:08:22 | ERROR    | app.api.v1.endpoints.routes:search_features:25 - Error during search operation: 500: 1 validation error for FeatureOut
+type
+  Field required [type=missing, input_value=<app.database.models.GeoF...t at 0x000001FC372A0A00>, input_type=GeoFeature]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-06-06 10:33:15 | ERROR    | app.api.v1.endpoints.routes:upload_geojson:62 - Failed to parse GeoJSON: name 'json' is not defined
+2025-06-06 10:33:32 | ERROR    | app.api.v1.endpoints.routes:upload_geojson:62 - Failed to parse GeoJSON: name 'json' is not defined
+2025-06-06 10:33:39 | ERROR    | app.api.v1.endpoints.routes:upload_geojson:62 - Failed to parse GeoJSON: name 'json' is not defined
+2025-06-06 10:34:10 | ERROR    | app.api.v1.endpoints.routes:upload_geojson:62 - Failed to parse GeoJSON: name 'json' is not defined

@@ -1,27 +1,14 @@
 class ExceptionConstants:
-    """Exception message constants"""
     
-    # General Errors
-    INTERNAL_SERVER_ERROR = "Internal server error"
-    DATABASE_CONNECTION_ERROR = "Database connection failed"
-    INVALID_REQUEST = "Invalid request parameters"
-    
-    # Search Errors
     SEARCH_ERROR = "Error during search operation"
-    RAILWAY_SEARCH_ERROR = "Error during railway search"
-    BBOX_SEARCH_ERROR = "Error during bounding box search"
-    BUFFER_SEARCH_ERROR = "Error during buffer zone search"
-    AUTOCOMPLETE_ERROR = "Error during autocomplete operation"
-    
-    # Data Errors
-    NO_RESULTS_FOUND = "No results found"
-    INVALID_COORDINATES = "Invalid coordinates provided"
-    INVALID_GEOMETRY = "Invalid geometry data"
-    
-    # Validation Errors
-    QUERY_TOO_SHORT = "Query string is too short"
-    INVALID_RADIUS = "Invalid radius value"
-    INVALID_BUFFER = "Invalid buffer value"
-    INVALID_BBOX = "Invalid bounding box coordinates"
-
     DB_CONNECTION_FAILED = "Database connection failed after {retries} attempts: {error}"
+    DB_SESSION_FAILED="Database session failed"
+
+    FULLTEXT_SEARCH_ERROR = "Error in full-text search: {error}"
+    SIMILARITY_SEARCH_ERROR = "Error in similarity search: {error}"    
+    AUTOCOMPLETE_ERROR = "Error in autocomplete: {error}"
+
+    INVALID_FILE_TYPE = "Only .geojson or .json files are accepted."
+    INVALID_GEOJSON_FORMAT = "Uploaded file is not a valid GeoJSON."
+    MISSING_FEATURES = "GeoJSON does not contain 'features'."
+    GEOJSON_DB_UPSERT_ERROR = "Failed to upsert feature to database."

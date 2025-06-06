@@ -17,10 +17,10 @@ class Settings(BaseSettings):
     REDOC_URL: str = "/redoc"
     
     # Search Configuration
-    DEFAULT_SEARCH_LIMIT: int = 20
+    DEFAULT_SEARCH_LIMIT: int = 30
     DEFAULT_RADIUS_KM: float = 20.0
     DEFAULT_BUFFER_KM: float = 5.0
-    SIMILARITY_THRESHOLD: float = 0.15
+    SIMILARITY_THRESHOLD: float = 0.25
     
     # Logging
     LOG_LEVEL: str = "INFO"
